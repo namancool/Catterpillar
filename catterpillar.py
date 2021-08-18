@@ -11,7 +11,7 @@ caterpillar.penup()
 caterpillar.hideturtle()
 
 leaf = t.Turtle()
-leaf_shape = ((0,0),(30,18),(18,6),(20,20),(6,18),(2,14))
+leaf_shape = ((0,0),(30,18),(32,20),(50,50),(20,32),(18,30))
 t.register_shape('leaf',leaf_shape)
 leaf.shape('leaf')
 leaf.color('LemonChiffon1')
@@ -21,7 +21,7 @@ leaf.speed()
 
 game_started = False
 text_turtle = t.Turtle()
-text_turtle.write('Press SPACE to start',align='center',font=('Arial',16,'bold'))
+text_turtle.write('Press SPACE to start',align='center',font=('Arial',30,'bold'))
 text_turtle.hideturtle()
 
 score_turtle = t.Turtle()
