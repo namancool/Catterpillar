@@ -11,7 +11,7 @@ caterpillar.penup()
 caterpillar.hideturtle()
 
 leaf = t.Turtle()
-leaf_shape = ((0,0),(14,2),(18,6),(20,20),(6,18),(2,14))
+leaf_shape = ((0,0),(30,18),(18,6),(20,20),(6,18),(2,14))
 t.register_shape('leaf',leaf_shape)
 leaf.shape('leaf')
 leaf.color('LemonChiffon1')
@@ -42,7 +42,7 @@ def game_over():
     leaf.color('black')
     t.penup()
     t.hideturtle()
-    t.write('GAME OVER!',align='center' , font=('Aerial',30,'normal'))
+    t.write('GAME OVER!',align='center', font=('Aerial',50,'normal'))
 
 def display_score(current_score):
     score_turtle.clear()
