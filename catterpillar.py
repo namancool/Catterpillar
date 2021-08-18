@@ -1,7 +1,7 @@
 import turtle as t
 import random as rd
 
-t.bgcolor('brown')
+t.bgcolor('brown1')
 
 caterpillar = t.Turtle()
 caterpillar.shape('square')
@@ -11,10 +11,10 @@ caterpillar.penup()
 caterpillar.hideturtle()
 
 leaf = t.Turtle()
-leaf_shape = ((0,0),(30,18),(32,20),(50,50),(20,32),(18,30))
+leaf_shape = ((0,0),(16,4),(18,8),(20,20),(8,18),(4,16))
 t.register_shape('leaf',leaf_shape)
 leaf.shape('leaf')
-leaf.color('LemonChiffon1')
+leaf.color('saddle brown')
 leaf.penup()
 leaf.hideturtle()
 leaf.speed()
