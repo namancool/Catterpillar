@@ -1,10 +1,11 @@
 import turtle as t
 import random as rd
 
-t.bgcolor('red')
+t.bgcolor('brown')
 
 caterpillar = t.Turtle()
 caterpillar.shape('square')
+caterpillar.color('green')
 caterpillar.speed(0)
 caterpillar.penup()
 caterpillar.hideturtle()
@@ -13,7 +14,7 @@ leaf = t.Turtle()
 leaf_shape = ((0,0),(14,2),(18,6),(20,20),(6,18),(2,14))
 t.register_shape('leaf',leaf_shape)
 leaf.shape('leaf')
-leaf.color('white')
+leaf.color('LemonChiffon1')
 leaf.penup()
 leaf.hideturtle()
 leaf.speed()
@@ -37,8 +38,8 @@ def outside_window():
     return outside
 
 def game_over():
-    caterpillar.color('yellow')
-    leaf.color('yellow')
+    caterpillar.color('red')
+    leaf.color('black')
     t.penup()
     t.hideturtle()
     t.write('GAME OVER!',align='center' , font=('Aerial',30,'normal'))
